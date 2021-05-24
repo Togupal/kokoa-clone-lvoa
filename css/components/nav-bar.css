@@ -1,0 +1,79 @@
+.nav {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background-color: #02131a;
+  padding: 20px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  color: white;
+  position: relative;
+}
+@keyframes newbie_nav__btn_animation {
+  0% {
+    transform: translatey(80px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+.nav__btn {
+  animation: newbie_nav__btn_animation 0.4s ease-in-out forwards;
+  transform: translatey(80px);
+}
+.nav__btn:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.nav__btn:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.nav__btn:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes newbie_notification_animation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.nav__notification__friend {
+  position: absolute;
+  top: -10px;
+  left: 14px;
+  animation: newbie_notification_animation 0.8s ease-in-out infinite;
+}
+
+.nav__notification__more {
+  background-color: #ff6229;
+  height: 5px;
+  width: 5px;
+  border-radius: 2.5px;
+  display: block;
+  position: absolute;
+  top: -3px;
+  right: -7px;
+}

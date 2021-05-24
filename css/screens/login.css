@@ -1,0 +1,73 @@
+.login-screen .status-bar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.welcome-header {
+  margin: 65px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-header_title {
+  margin-bottom: 25px;
+  font-size: 25px;
+  font-weight: 700;
+}
+.welcome-header_text {
+  width: 60%;
+  color: white;
+  opacity: 0.7;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 25px;
+}
+
+#login-form input {
+  padding: 15px 0px;
+  border: none;
+  font-size: 15px;
+  margin-bottom: 30px;
+  background-color: #791418;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: var(--main-border);
+  transition: border-color 0.4s ease-in-out;
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--brown);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 20px 0px;
+  border-radius: 10px;
+}
+
+#login-form input[value="Sing up"] {
+  cursor: not-allowed;
+}
+
+#login-form input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+#login-form input:focus {
+  border-color: var(--brown);
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+}

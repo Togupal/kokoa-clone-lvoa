@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,300;0,500;0,600;0,700;1,300&display=swap");
+@import "reset.css";
+@import "variables.css";
+
+/*components*/
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-components.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+
+/*screens*/
+@import "screens/login.css";
+@import "screens/friend.css";
+@import "screens/social.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+@import "screens/chats.css";
+
+body {
+  font-family: "KoHo", sans-serif;
+  height: 1000vh;
+  color: #121314;
+  background-color: #791418;
+}
+
+@keyframes main_puff_in_animation {
+  from {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.main-screen {
+  margin: 0px 25px 25px 25px;
+  animation: main_puff_in_animation 0.4s ease-in-out forwards;
+  padding-top: 130px;
+}

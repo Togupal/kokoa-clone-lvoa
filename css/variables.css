@@ -1,0 +1,6 @@
+:root {
+  --brown: #946d52;
+  --horizontal-space: 25px 25px 25px 25px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.2);
+  --text-gray: rgba(0, 0, 0, 0.4);
+}

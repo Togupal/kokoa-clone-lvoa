@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Welcome to Middle Ages Talk!</title>
+  </head>
+  <body class="login-screen">
+    <!--status bar-->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No PVP zone</span>
+        <i class="fas fa-khanda"></i>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-cloud-moon"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>80%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+        <i class="fas fa-beer"></i>
+      </div>
+    </div>
+    <!--main-->
+    <header class="welcome-header">
+      <h1 class="welcome-header_title">Welcome to Middle ages Talk</h1>
+      <p class="welcome-header_text">
+        if you have a Middle ages Account, log in with you are email or phone
+        number.
+      </p>
+    </header>
+
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
+      <input type="submit" value="Log in" />
+      <input type="submit" value="Sing up" />
+      <a href="#">Find Middle ages Account or Password</a>
+    </form>
+
+    <div id="no-mobile">
+      <span>you are screen to big</span>
+    </div>
+
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/57a6f25ba1.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

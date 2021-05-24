@@ -1,0 +1,64 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--horizontal-space);
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  top: 15px;
+  z-index: 1;
+  background-color: #02131a;
+  color: white;
+}
+
+.screen-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+}
+
+@keyframes wobble_animation {
+  0%,
+  100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+.screen-header .fa-hammer:hover {
+  animation: wobble_animation 0.8s linear infinite;
+}
+
+.screen-header__hammer {
+  position: relative;
+}
+
+.screen-header__notification__hammer {
+  background-color: #ff6229;
+  height: 7px;
+  width: 7px;
+  border-radius: 3.5px;
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: -7px;
+}
